@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: purple;
+    --color-success: green;
+    --color-warning: orange;
+    --color-danger: red;
+    --color-danger-variant: rgba(247, 88, 66, 0.4);
+    --color-white: white;
+    --color-light: rgba(255, 255, 255, 0.7);
+    --color-black: black;
+    --color-bg: rgb(15, 7, 43);
+    --color-bg1: blue;
+    --color-bg2: aqua;
+
+    --container-width-ig: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.7;
+    color: var(--color-white);
+    background: var(--color-bg);
+    border-width: 10px;
+}
+
+.container {
+    width: var(--container-width-Ig);
+    margin: 0 auto;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+a {
+    color: var(--color-white);
+}
+
+img {
+    width: 100%;
+    display:block;
+    object-fit: cover; 
+}
+
+.btn {
+    display: inline-block;
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.btn.primary {
+    background: var(--color-danger);
+    color: var(--color-white);
+}
+
+/* ===========NAVBAR========== */
+nav {
+    background-color:pink;
+    width: 100vw;
+    height: 5rem;
+    position: static ;
+    top: 0;
+    z-index: 11;
+    padding-left: 2em;
+}
+
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav button {
+    display: none;
+}
+
+.nav__menu {
+     display: flex;
+     align-items: center;
+     gap: 4rem;
+
+}
+
+.nav__menu a {
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.nav__menu a:hover {
+    color: red;
+} 
+
+/*=========HEADER===========*/
+header {
+    position: relative;
+    top: 5rem;
+    overflow: hidden;
+    height: 70vh;
+    margin-bottom: 5rem;
+}
+
+.header__container {
+    display: grid;
+    grid-template-columns: auto;
+    background: url("sgr.jpg");
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+    background-position: inherit;
+ background-attachment:scroll ;
+ padding-left: 2em;
+ padding-right: 2em;
+}
+
+form {
+    background:transparent;
+    width: 100%;
+}
+
+main {
+    padding-left:2em ;
+    background-color: lightgreen;
+}
+
+id {
+    text-align: center;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("log.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
